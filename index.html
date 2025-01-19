@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Universal Translator</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="container">
+        <h1>Universal Translator</h1>
+        <div class="controls">
+          <div class="file-upload">
+            <input type="file" id="fileInput" accept=".txt,.docx,.xlsx,.html">
+            <button id="uploadBtn">Upload File</button>
+          </div>
+          <div class="language-select">
+            <label for="sourceLang">From:</label>
+            <select id="sourceLang"></select>
+            <label for="targetLang">To:</label>
+            <select id="targetLang"></select>
+          </div>
+          <button id="translateBtn">Translate</button>
+        </div>
+        <div class="content">
+          <textarea id="inputText" placeholder="Enter text or upload file..."></textarea>
+          <div id="outputText"></div>
+        </div>
+        <button id="downloadBtn" disabled>Download Translation</button>
+      </div>
+      <script type="module" src="main.js"></script>
+    </body>
+    </html>
